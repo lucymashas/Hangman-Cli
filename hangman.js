@@ -9,7 +9,6 @@ var count = 0;
 
 function guessLetter(){
   if (paintings.gameOver){
-    console.log('\nGAME OVER\n');
     return;
   }
     inquirer.prompt([
@@ -27,7 +26,7 @@ function guessLetter(){
   }
   
  
- function playHangman(){
+ 
   inquirer.prompt([
     {
       type: "confirm",
@@ -40,10 +39,7 @@ function guessLetter(){
         guessLetter();
       } 
     });
- }
 
- playHangman();
- 
 
 
 

@@ -57,6 +57,11 @@ function Word(arrOfWords) {
           this.pickWord();
           this.initializeWord();
         }else{
+          if (this.displayedWord === this.randomWord){
+            console.log("\nCorrect Guess! Game Over\n");
+          }else{
+            console.log("\nDid Not Guess The Word!  Game Over\n");
+          }
           this.gameOver = true;
         }
     }
