@@ -4,8 +4,6 @@ var Word = require('./word');
 
 
 var paintings = new Word(['MONA LISA', 'THE IDLE DANCER', 'GREEN SCENARY']);
-var paintings = new Word(['MONA LISA']);
-var count = 0;
 
 function guessLetter(){
   if (paintings.gameOver){
@@ -31,7 +29,7 @@ function guessLetter(){
     {
       type: "confirm",
       name: "start",
-      message: "Start Playing Hang Man?"
+      message: "Start Playing Hang Man? (Paintings Theme)"
     }
   ]).then(function(userstart) {
       if (userstart.start === true){
@@ -39,9 +37,6 @@ function guessLetter(){
         guessLetter();
       } 
     });
-
-
-
 
 
 
